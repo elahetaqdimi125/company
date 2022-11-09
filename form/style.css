@@ -1,0 +1,288 @@
+/* ul li ul
+{
+Display:none;
+}
+ul li:hover ul
+{
+    display: block;
+}
+ul
+{
+Position: relative;
+}
+
+ul li
+{
+Display:inline-block;
+}
+
+ul
+{
+	list-style:none;
+}
+
+li
+{
+	float: right;
+	width: auto;
+	position: relative;
+	height: 40px;
+}
+
+ul li
+{display: inline-block;
+
+}
+
+  ul li a
+{
+	padding:5px 18px 0px 10px;
+	font: 15px ;
+    font-weight:bold;
+	color:#323232;
+	max-height:33px;
+	margin-top:3px;
+    line-height:0px;
+	display: inline-block;
+}
+
+  ul li ul
+{
+	Display:none;
+    padding: 0;
+    margin:5px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 150px;
+  Z-index:1;
+
+    margin-right:-10px;
+}
+
+ul li ul li
+{
+  width:150px;
+  height:auto;
+  text-align:center;
+  padding:10px;
+  background-color:#dcedc8;
+  border:1px solid #BDBDBD;
+	opacity: .85;
+}
+
+ul li ul li:hover
+{
+  width:150px;
+  border:1px solid #ffc107;
+  background-color:#ffc107;
+  
+}
+
+  ul li:hover ul
+{
+   display: block;
+   opacity: 1;
+   visibility: visible;
+}
+
+  ul li ul li a 
+{
+   color: #ee1212;
+   width: 150px;
+	text-align: justify;
+	padding:50px;
+}
+
+ul
+{
+	list-style:none;
+}
+ 
+li
+{
+	float: right;
+	width: auto;
+	position: relative;
+	height: 40px;
+}
+ 
+ul li
+{
+ float: left;
+ display: inline-block;
+}
+ 
+  ul li a
+{
+	padding:5px 20px 0px 10px;
+	font: 15px ;
+    font-weight:bold;
+	color:#110f0f;
+	max-height:33px;
+	margin-top:3px;
+    line-height:0px;
+	display: inline-block;
+    text-decoration: none;
+
+}
+ 
+  ul li ul
+{
+	Display:none;
+   padding: 0;
+    margin:5px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    visibility: hidden;
+    width: 150px;
+  Z-index:1;
+  margin-right:-10px;
+}
+ 
+ul li ul li
+{
+  width:150px;
+  height:auto;
+  text-align:center;
+  padding:20px;
+  background-color:#dcedc8;
+  border:1px solid #BDBDBD;
+	opacity: .85;
+}
+ 
+ul li ul li:hover
+{border:1px solid #BDBDBD;
+background-color:#BDBDBD;
+width:150px
+}
+ 
+  ul li:hover ul
+{
+   display: block;
+  opacity: 1;
+  visibility: visible;
+}
+ 
+  ul li ul li a 
+{
+   color: #000000;
+   width: 150px;
+	text-align:justify;
+	padding:15px;
+} */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.clear-fix{
+	clear: both;
+}
+
+a{
+	text-decoration: none;
+}
+
+#nav{
+	background-color: rgb(40, 148, 219);
+	border-bottom: 80px solid rgb(146, 202, 235);			
+}
+
+#nav ul{
+	list-style: none;
+}
+
+#nav li{
+	position: relative;
+}
+
+#nav > ul > li{
+	float: left;
+    padding-top: 15px;
+    padding-left: 20px;			
+}
+
+#nav > ul > li > a{
+	display: inline-block;
+	color: rgb(17, 16, 16);
+	padding: 0 10px;
+	line-height: 50px;
+}
+
+#nav > ul > li:hover > a{
+	background-color: rgb(55, 134, 238);
+	color: rgb(247, 239, 239);
+}
+/* styles for sub menu */
+#nav .sub-menu{
+	display: none;
+	position: absolute;			
+}
+
+#nav .sub-menu > li > a{
+	display: block;
+	width: 130px;
+	background-color: rgb(40, 148, 219);
+	color: rgb(19, 17, 17);
+	padding: 5px 10px;
+}
+
+#nav .sub-menu > li:hover > a{
+	background-color: rgb(104, 181, 233);
+}
+
+#nav li:hover > .sub-menu{
+	display: block;
+}	
+  
+  #nav .search-container {
+    float: right;
+    padding-top: 15px;
+  }
+  
+  #nav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  #nav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #nav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #nav .search-container {
+      float: none;
+    }
+    #nav a, #nav input[type=text], #nav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    #nav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
+
+    .img-nav{
+        float: right;
+        padding-right: 50px;
+        margin-top: 15px;
+    }
